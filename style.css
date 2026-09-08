@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 650px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.menu-navegacion a:hover {
+    background-color: #dee2e6;
+    color: #000000;
+}
+
+.menu-navegacion a.activo {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+.mb-5 {
+    margin-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.col-md-4,
+.col-md-6 {
+    flex: 1;
+    min-width: 150px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+.mensaje_error {
+    display: block;
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <nav class="menu-navegacion">
+            <a href="index.html">Home</a>
+            <a href="reserva.html" class="activo">Reserva</a>
+            <a href="login.html">Ingresar a Portal</a>
+        </nav>
+
+        <article>
+            <section class="mb-5">
+                <h2>Información de la Reserva</h2>
+
+                <form id="reservaForm">
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-4">
+                            <label for="campo_nombre">Nombre *</label>
+                            <input type="text" name="campo_nombre" id="campo_nombre" placeholder="Ingrese su nombre">
+                            <span class="mensaje_error" id="mensaje_nombre"></span>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="campo_correo">Correo *</label>
+                            <input type="email" name="campo_correo" id="campo_correo" placeholder="Ingrese su correo">
+                            <span class="mensaje_error" id="mensaje_correo"></span>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="campo_telefono">Teléfono *</label>
+                            <input type="tel" name="campo_telefono" id="campo_telefono"
+                                placeholder="Ingrese su teléfono">
+                            <span class="mensaje_error" id="mensaje_telefono"></span>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="campo_fecha">Fecha del Evento *</label>
+                            <input type="date" name="campo_fecha" id="campo_fecha">
+                            <span class="mensaje_error" id="mensaje_fecha"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="campo_hora">Hora de Inicio *</label>
+                            <input type="time" name="campo_hora" id="campo_hora">
+                            <span class="mensaje_error" id="mensaje_hora"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="campo_perros">Cantidad de Perros Grandes *</label>
+                        <input type="number" name="campo_perros" id="campo_perros" value="5" min="0">
+                        <span class="mensaje_error" id="mensaje_perros"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </section>
+
+            <section class="mb-5 text-center">
+                <h3>Conoce nuestros eventos</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CtB3bg8yy3Y"
+                    title="Video de muestra" allowfullscreen></iframe>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
