@@ -16,7 +16,7 @@
         <div class="tarjeta-login">
 
             <div class="logo-centrado">
-                <span class="icono-pata">🐾</span>
+                <span class="icono"><img src="img/logo.png" alt="Logo DogSitter" width="50px"></span>
                 <h2>DogSitter</h2>
             </div>
 
@@ -26,15 +26,17 @@
             <h3 class="texto-centrado espacio-arriba">Bienvenido de Nuevo</h3>
             <p class="texto-pequeno texto-centrado">Ingresa tus credenciales para acceder a tu panel de control.</p>
 
-            <form action="index.html" method="GET" class="formulario-login">
+            <form action="index.html" method="GET" id="loginForm" class="formulario-login">
                 <p>
                     <label for="email" class="etiqueta-pequena">CORREO ELECTRÓNICO</label><br>
-                    <input type="text" id="email" name="email" placeholder=" tu@correo.com o admin" required>
+                    <input type="text" id="email" name="email" placeholder=" tu@correo.com">
+                    <span id="mensaje_email" class="mensaje_error"></span>
                 </p>
 
                 <p>
                     <label for="password" class="etiqueta-pequena">CONTRASEÑA</label><br>
-                    <input type="password" id="password" name="password" placeholder=" ••••••••" required>
+                    <input type="password" id="password" name="password">
+                    <span id="mensaje_password" class="mensaje_error"></span>
                 </p>
 
                 <p>
@@ -44,7 +46,7 @@
         </div>
 
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
