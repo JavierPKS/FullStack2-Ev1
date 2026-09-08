@@ -1,3 +1,10 @@
+/* ==========================================================
+   ESTILOS GENERALES Y BASE
+   ========================================================== */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fbfbfb;
@@ -5,6 +12,9 @@ body {
     margin: 20px;
 }
 
+/* ==========================================================
+   HEADER Y NAVEGACIÓN (INDEX)
+   ========================================================== */
 header {
     background-color: white;
     padding: 20px;
@@ -15,14 +25,6 @@ header {
 #logo {
     color: #a44e36;
     margin-bottom: 15px;
-}
-
-.etiqueta {
-    background-color: #f1dfd8;
-    color: #a44e36;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 5px;
 }
 
 nav a {
@@ -36,7 +38,50 @@ nav a:hover {
     color: #a44e36;
 }
 
-.boton-primario {
+.etiqueta {
+    background-color: #f1dfd8;
+    color: #a44e36;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* ==========================================================
+   PESTAÑAS DE NAVEGACIÓN (RESERVA)
+   ========================================================== */
+.menu-navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #f1dfd8;
+    color: #a44e36;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.menu-navegacion a:hover {
+    background-color: #e5cbbf;
+}
+
+.menu-navegacion a.activo {
+    background-color: #a44e36;
+    color: #ffffff;
+}
+
+/* ==========================================================
+   BOTONES
+   ========================================================== */
+.boton-primario,
+.btn-primary {
     background-color: #a44e36;
     color: white;
     padding: 10px 20px;
@@ -44,6 +89,19 @@ nav a:hover {
     border: none;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.boton-primario:hover,
+.btn-primary:hover {
+    background-color: #8a3d29;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
 }
 
 .boton-secundario {
@@ -56,6 +114,79 @@ nav a:hover {
     cursor: pointer;
 }
 
+/* ==========================================================
+   CONTENEDOR Y ESTRUCTURA (RESERVA)
+   ========================================================== */
+.container {
+    background-color: #ffffff;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 5px 15px #eaeaea;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.col-md-4,
+.col-md-6 {
+    flex: 1;
+    min-width: 150px;
+}
+
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+.mb-5 {
+    margin-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ==========================================================
+   FORMULARIOS Y CAMPOS
+   ========================================================== */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+input:focus {
+    border-color: #a44e36;
+}
+
+.mensaje_error {
+    display: block;
+    color: #c94b4b;
+    font-size: 12px;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+/* ==========================================================
+   PÁGINA PRINCIPAL (INDEX)
+   ========================================================== */
 .subtitulo {
     color: #a44e36;
     font-weight: bold;
@@ -100,15 +231,10 @@ section {
     border: 1px solid #eeeeee;
 }
 
-h2 {
-    color: #333333;
-}
-
-input {
-    padding: 10px;
-    width: 300px;
-    margin-bottom: 15px;
-    border: 1px solid #cccccc;
+h2, h3 {
+    color: #a44e36;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -119,6 +245,9 @@ footer {
     margin-top: 30px;
 }
 
+/* ==========================================================
+   PÁGINA DE LOGIN
+   ========================================================== */
 .fondo-login {
     background-color: #fcf9fa;
     margin: 0;
@@ -203,62 +332,11 @@ footer {
     padding: 15px;
 }
 
-.link-registro {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.link-registro a {
-    color: #a44e36;
-    font-size: 12px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.linea-separadora {
-    border: 0;
-    border-top: 1px solid #eeeeee;
-    margin: 25px 0;
-}
-
-.botones-rapidos {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.boton-admin {
-    background-color: #fdf0f0;
-    color: #c94b4b;
+/* ==========================================================
+   MULTIMEDIA
+   ========================================================== */
+iframe {
+    max-width: 100%;
     border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: bold;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-.boton-cliente {
-    background-color: #eaf5e9;
-    color: #3b873e;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.texto-muy-pequeno {
-    font-size: 11px;
-    margin-top: 20px;
-}
-
-.texto-rojo {
-    color: #a44e36;
-    font-weight: bold;
-}
-
-.texto-gris {
-    color: #aaaaaa;
+    border-radius: 8px;
 }
