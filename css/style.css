@@ -1,6 +1,4 @@
-/* ==========================================================
-   ESTILOS GENERALES Y BASE
-   ========================================================== */
+/* BASE */
 * {
     box-sizing: border-box;
 }
@@ -12,43 +10,8 @@ body {
     margin: 20px;
 }
 
-/* ==========================================================
-   HEADER Y NAVEGACIÓN (INDEX)
-   ========================================================== */
-header {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #cccccc;
-    text-align: center;
-}
+/* MENU */
 
-#logo {
-    color: #a44e36;
-    margin-bottom: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #444444;
-    margin: 0 10px;
-    font-size: 18px;
-}
-
-nav a:hover {
-    color: #a44e36;
-}
-
-.etiqueta {
-    background-color: #f1dfd8;
-    color: #a44e36;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-/* ==========================================================
-   PESTAÑAS DE NAVEGACIÓN (RESERVA)
-   ========================================================== */
 .menu-navegacion {
     display: flex;
     justify-content: center;
@@ -77,46 +40,8 @@ nav a:hover {
     color: #ffffff;
 }
 
-/* ==========================================================
-   BOTONES
-   ========================================================== */
-.boton-primario,
-.btn-primary {
-    background-color: #a44e36;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.2s ease;
-}
+/* RESERVA */
 
-.boton-primario:hover,
-.btn-primary:hover {
-    background-color: #8a3d29;
-}
-
-.btn {
-    width: 100%;
-    padding: 12px;
-}
-
-.boton-secundario {
-    background-color: #e2e8f0;
-    color: #333333;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* ==========================================================
-   CONTENEDOR Y ESTRUCTURA (RESERVA)
-   ========================================================== */
 .container {
     background-color: #ffffff;
     max-width: 650px;
@@ -151,9 +76,43 @@ nav a:hover {
     text-align: center;
 }
 
-/* ==========================================================
-   FORMULARIOS Y CAMPOS
-   ========================================================== */
+/* BOTONES */
+
+.boton-primario,
+.btn-primary {
+    background-color: #a44e36;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.boton-primario:hover,
+.btn-primary:hover {
+    background-color: #8a3d29;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+}
+
+.boton-secundario {
+    background-color: #e2e8f0;
+    color: #333333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* FORM */
 label {
     display: block;
     margin-bottom: 6px;
@@ -184,9 +143,28 @@ input:focus {
     min-height: 16px;
 }
 
-/* ==========================================================
-   PÁGINA PRINCIPAL (INDEX)
-   ========================================================== */
+/* INDEX */
+
+header {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+#logo {
+    color: #a44e36;
+    margin-bottom: 15px;
+}
+
+.etiqueta {
+    background-color: #f1dfd8;
+    color: #a44e36;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 .subtitulo {
     color: #a44e36;
     font-weight: bold;
@@ -246,9 +224,8 @@ footer {
     margin-top: 30px;
 }
 
-/* ==========================================================
-   PÁGINA DE LOGIN
-   ========================================================== */
+/* LOGIN */
+
 .fondo-login {
     background-color: #fcf9fa;
     margin: 0;
@@ -333,9 +310,7 @@ footer {
     padding: 15px;
 }
 
-/* ==========================================================
-   MULTIMEDIA
-   ========================================================== */
+/* MULTIMEDIA */
 iframe {
     max-width: 100%;
     border: none;
