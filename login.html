@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ingresar Portal - DogSitter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="fondo-login">
+    <div class="boton-volver">
+        <a href="index.html">&larr; Volver al Inicio</a>
+    </div>
+
+    <main class="contenedor-login">
+        <div class="tarjeta-login">
+
+            <div class="logo-centrado">
+                <span class="icono-pata">🐾</span>
+                <h2>DogSitter</h2>
+            </div>
+
+            <p class="texto-pequeno texto-centrado">Inicia sesión o selecciona un rol para coordinar banquetes premium y
+                administrar recursos operativos de alta cocina canina.</p>
+
+            <h3 class="texto-centrado espacio-arriba">Bienvenido de Nuevo</h3>
+            <p class="texto-pequeno texto-centrado">Ingresa tus credenciales para acceder a tu panel de control.</p>
+
+            <form action="index.html" method="GET" class="formulario-login">
+                <p>
+                    <label for="email" class="etiqueta-pequena">CORREO ELECTRÓNICO</label><br>
+                    <input type="text" id="email" name="email" placeholder=" tu@correo.com o admin" required>
+                </p>
+
+                <p>
+                    <label for="password" class="etiqueta-pequena">CONTRASEÑA</label><br>
+                    <input type="password" id="password" name="password" placeholder=" ••••••••" required>
+                </p>
+
+                <p>
+                    <button type="submit" class="boton-primario boton-ancho">Acceder al Portal &rarr;</button>
+                </p>
+            </form>
+
+            <div class="link-registro">
+                <a href="#">¿No tienes cuenta? Regístrate aquí</a>
+            </div>
+
+            <hr class="linea-separadora">
+
+            <p class="etiqueta-pequena texto-centrado">¿PRUEBA RÁPIDA DE ROLES?</p>
+
+            <div class="botones-rapidos">
+                <button class="boton-admin">Ingreso Rápido Admin: Elena</button>
+                <button class="boton-cliente">Ingreso Rápido Cliente: Sarah</button>
+            </div>
+
+            <p class="texto-muy-pequeno texto-centrado">Las credenciales de demo son:<br><span class="texto-rojo">admin
+                    / admin</span></p>
+
+            <p class="texto-muy-pequeno texto-centrado texto-gris">♡ DogSitter utiliza localStorage para recordar tu
+                sesión activa.</p>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
